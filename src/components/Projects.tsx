@@ -10,7 +10,10 @@ export function Projects() {
   return (
     <>
       <h1 className="font-bold text-xl mb-8">Meus Projetos</h1>
-      <div className="grid grid-cols-4 gap-8 w-[90%]">
+      <div
+        id="projects"
+        className="grid grid-cols-4 gap-8 w-[90%] max-sm:flex max-sm:flex-col"
+      >
         {!showAll
           ? dbProjects.map((project, index) => {
               if (index <= 3) {

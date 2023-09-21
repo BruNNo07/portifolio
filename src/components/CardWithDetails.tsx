@@ -1,6 +1,4 @@
 import { ArrowSquareOut } from 'phosphor-react'
-import { Card } from './ui/card'
-import { Certificate } from 'crypto'
 import { motion } from 'framer-motion'
 
 interface CardWithDetailsProps {
@@ -26,7 +24,7 @@ export function CardWithDetails({
         conclusion
           ? 'border-emerald-500 bg-emerald-500/20 hover:bg-emerald-600/20'
           : 'border-violet-500 hover:bg-violet-500/20'
-      } transition-all delay-75 w-[30rem] p-6 flex flex-col gap-4 relative rounded-md border bg-card text-card-foreground shadow`}
+      } transition-all delay-75 w-[30rem] p-6 flex flex-col gap-4 relative rounded-md border bg-card text-card-foreground shadow max-sm:w-[90%]`}
     >
       {certificate && (
         <a

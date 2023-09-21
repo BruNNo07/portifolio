@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <main className="flex-1 flex w-screen items-center justify-around flex-wrap overflow-hidden flex-col gap-4">
         <Apresentation />
-        <Separator className="w-[90%] bg-violet-500/50 my-12" />
+        <Separator className="w-[90%] bg-violet-500/50 my-12 max-sm:my-8" />
         <About />
         <Separator className="w-[90%] bg-violet-500/50 my-12" />
         <Experiences />
