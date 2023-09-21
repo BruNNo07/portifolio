@@ -6,14 +6,7 @@ export function Experiences() {
     <section className="flex flex-col gap-5 w-full">
       <h1 className="text-center text-lg font-bold">Experiências</h1>
       <div className="flex justify-around w-full flex-wrap">
-        <motion.div
-          initial={{ x: -300 }}
-          whileInView={{
-            x: 0,
-            transition: { duration: 2, type: 'spring', bounce: 0.2 },
-          }}
-          className="flex flex-col gap-4 items-center max-sm:mb-5"
-        >
+        <div className="flex flex-col gap-4 items-center max-sm:mb-5">
           <h1 className="text-center">Acadêmicas</h1>
           <CardWithDetails
             title="Bacharelado em Ciência da Computação"
@@ -28,15 +21,8 @@ export function Experiences() {
             conclusion={true}
             description="Formado no Ensino médio pelo Colégio Angélica"
           />
-        </motion.div>
-        <motion.div
-          initial={{ y: 300 }}
-          whileInView={{
-            y: 0,
-            transition: { duration: 2, type: 'spring', bounce: 0.2 },
-          }}
-          className="flex flex-col gap-4 items-center max-sm:mb-5"
-        >
+        </div>
+        <div className="flex flex-col gap-4 items-center max-sm:mb-5">
           <h1 className="text-center">Profissionais</h1>
           <CardWithDetails
             title="Desenvolvedor Web - Autônomo"
@@ -58,15 +44,8 @@ export function Experiences() {
             conclusion={true}
             description="Gerenciamento de pedidos e estoque com a ferramenta Dynamic AX. Criação de dashboards e relatórios em Excel."
           />
-        </motion.div>
-        <motion.div
-          initial={{ x: 300 }}
-          whileInView={{
-            x: 0,
-            transition: { duration: 2, type: 'spring', bounce: 0.2 },
-          }}
-          className="flex flex-col gap-4 items-center max-sm:mb-5"
-        >
+        </div>
+        <div className="flex flex-col gap-4 items-center max-sm:mb-5">
           <h1 className="text-center">Certificação</h1>
           <CardWithDetails
             title="RocketSeat - Ignite - React e React Native"
@@ -94,7 +73,7 @@ export function Experiences() {
             description="Curso focado em aprender tudo o que é necessário para desenvolver otimos templates no Figma"
             certificate="https://app.rocketseat.com.br/certificates/adc65e29-1a01-4706-9ed5-eececef345c2"
           />
-        </motion.div>
+        </div>
       </div>
     </section>
   )
